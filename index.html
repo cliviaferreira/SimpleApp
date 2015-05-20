@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <title>Treinamento PhoneGap</title>
+    </head>
+    <body>
+        <div>
+            <h1>Treinamento PhoneGap</h1>
+            <div id="paginaPrincipal">
+                <ul class="list-group">
+					<li  class="list-group-item"><a href="#" id="btnNotificacoes" class="glyphicon glyphicon-arrow-right">Notificações</a></li>
+					<li class="list-group-item"><a href="#">&nbsp;</a></li>
+					<li class="list-group-item"><a href="#">&nbsp;</a></li>
+					<li class="list-group-item"><a href="#">&nbsp;</a></li>
+					<li class="list-group-item"><a href="#">&nbsp;</a></li>
+					<li class="list-group-item"><a href="#">&nbsp;</a></li>
+				</ul>
+            </div>
+			<div id="paginaNotificacoes">
+                <button id="btnAlert">Alert</button>
+				<button id="btnComfirm">Comfirm</button>
+            </div>
+        </div>
+        <!--<script type="text/javascript" src="js/index.js"></script>-->
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+        <script type="text/javascript">
+            //app.initialize();
+			document.addEventListener("deviceready", teste, false);
+			function teste() {
+				$("#paginaNotificacoes").css("display", "none");
+				 //navigator.notification.alert('You are the winner!','Game Over','Done');
+			}
+		
+        </script>
+    </body>
+</html>
